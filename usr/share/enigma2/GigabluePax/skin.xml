@@ -1926,15 +1926,15 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="infolist" font="SetrixHD; 22" itemHeight="40" enableWrapAround="1" selectionDisabled="1" position="0,0" size="1,1" backgroundColor="layer-a-background" transparent="1" />
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
 	</screen> -->
-<screen name="ServiceInfo" position="0,0" size="1280, 720" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent" >
-	<panel name="PANEL_GIGABLUE_TOP"/>
-	<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
-	<ePixmap pixmap="GigabluePax/construct/menu/info/channel.png" position="237,289" size="200,200" alphatest="blend"/>
-	<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
-	<eLabel position="570,91" zPosition="-1" size="665,580" backgroundColor="layer-a-background" />
-	<widget name="infolist" font="SetrixHD; 22" itemHeight="40" enableWrapAround="1" selectionDisabled="1" position="590,105" size="655,560" backgroundColor="layer-a-background" transparent="1" />
-	<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
-</screen>
+	<screen name="ServiceInfo" position="0,0" size="1280, 720" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent" >
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<ePixmap pixmap="GigabluePax/construct/menu/info/channel.png" position="237,289" size="200,200" alphatest="blend"/>
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
+		<eLabel position="570,91" zPosition="-1" size="665,580" backgroundColor="layer-a-background" />
+		<widget name="infolist" font="SetrixHD; 22" itemHeight="40" enableWrapAround="1" selectionDisabled="1" position="590,105" size="655,560" backgroundColor="layer-a-background" transparent="1" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
+	</screen>
 	<screen name="OSD3DSetupScreen" position="0, 0" flags="wfNoBorder" title="OSD 3D setup" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
@@ -2259,6 +2259,16 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		</widget>
 		<widget source="infotext" render="Label" position="480,605" size="730,40" zPosition="3" font="Regular; 22" halign="center" transparent="1"/>
 	</screen>
+        <screen name="NetworkPassword" position="0, 0" flags="wfNoBorder" title="Password" transparent="0" backgroundColor="transparent" size="1280, 720">
+                <panel name="PANEL_GIGABLUE_TOP"/>
+                <panel name="PANEL_WINDOW_LARGE"/>
+                <panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
+                <ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+                <widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
+                <widget name="config" position="480,80" size="730,363" itemHeight="30" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" scrollbarMode="showOnDemand" transparent="1"/>
+                <widget name="HelpWindow" position="560,505" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
+                <widget source="introduction" render="Label" position="480,450" size="730,25" font="Regular; 18" halign="right" backgroundColor="layer-a-background" transparent="1"/>
+        </screen>
 	<screen name="NetworkMacSetup" position="0, 0" title="MAC-adress settings" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
