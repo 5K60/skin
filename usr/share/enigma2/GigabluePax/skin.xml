@@ -278,6 +278,11 @@
 		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
 	</screen>
+	<screen name="PANEL_BUTTONBAR_RB_X">
+		<panel name="PANEL_BUTTONBAR_SOURCE_RB_X"/>
+		<widget name="key_red" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+		<widget name="key_blue" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+	</screen>
 	<screen name="PANEL_BUTTONBAR_RGB_X">
 		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/buttonbar_exit.png" alphatest="blend" zPosition="1"/>
 		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="564,680" size="30,40" alphatest="blend"/>
@@ -393,7 +398,7 @@
 		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
 		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu_path_compressed" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<!--widget source="menu_path_compressed" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/-->
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -1673,7 +1678,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<eLabel text="Network Setup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget source="Adapter" render="Label" position="483,81" size="725,40" font="SetrixHD; 28" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="config" position="483,140" size="725,240" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
@@ -1697,7 +1702,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_BUTTONBAR_SOURCE_R_X"/>
 		<eLabel text="Network Configuration" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget source="IF" render="Label" position="483,81" size="725,40" font="SetrixHD; 28" backgroundColor="layer-a-background" transparent="1"/>
-		<widget name="statuspic" pixmaps="GigabluePax/construct/plugins/network-online.png,GigabluePax/construct/plugins/network.png" transparent="1" position="137,289" size="200,200" alphatest="blend"/>
+		<widget name="statuspic" pixmaps="GigabluePax/construct/plugins/network-online.png,GigabluePax/construct/plugins/network.png" transparent="1" position="237,289" size="200,200" alphatest="blend"/>
 		<widget name="menulist" position="483,134" size="725,370" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="description" render="Label" position="483,515" size="725,135" font="Regular; 24" halign="right" valign="bottom" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
@@ -2096,7 +2101,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGY_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="config" position="482,84" size="728,501" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="introduction" render="Label" position="482,597" size="728,50" font="Regular;19" backgroundColor="layer-a-background" transparent="1"/>
@@ -2105,7 +2110,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGY_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="Regular; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="Adaptertext" position="483,119" size="400,25" zPosition="1" font="Regular;22" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="Adapter" position="483,150" size="400,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" backgroundColor="layer-a-background" transparent="1"/>
@@ -2144,7 +2149,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<eLabel text="Select a network adapter" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget source="list" render="Listbox" position="483,85" size="725,500" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -2165,7 +2170,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGY_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="config" position="480,90" size="730,500" zPosition="3" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" scrollbarMode="showOnDemand"/>
 	</screen>
@@ -2193,7 +2198,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_R_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="config" position="480,80" size="730,363" itemHeight="30" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="HelpWindow" position="560,505" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
@@ -2203,7 +2208,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RY_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget source="legend1" render="Label" position="480,90" size="189,65" font="Regular;20" halign="center" valign="center" transparent="1"/>
 		<widget source="legend2" render="Label" position="674,90" size="360,65" font="Regular;20" halign="center" valign="center" transparent="1"/>
@@ -2230,7 +2235,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RY_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget source="config" render="Listbox" position="480,90" size="730,500" zPosition="3" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -2249,7 +2254,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget source="list" render="Listbox" position="480,90" size="730,500" zPosition="3" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -2268,16 +2273,16 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		</widget>
 		<widget source="infotext" render="Label" position="480,605" size="730,40" zPosition="3" font="Regular; 22" halign="center" transparent="1"/>
 	</screen>
-        <screen name="NetworkPassword" position="0, 0" flags="wfNoBorder" title="Password" transparent="0" backgroundColor="transparent" size="1280, 720">
-                <panel name="PANEL_GIGABLUE_TOP"/>
-                <panel name="PANEL_WINDOW_LARGE"/>
-                <panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
-                <ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
-                <widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
-                <widget name="config" position="480,80" size="730,363" itemHeight="30" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" scrollbarMode="showOnDemand" transparent="1"/>
-                <widget name="HelpWindow" position="560,505" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
-                <widget source="introduction" render="Label" position="480,450" size="730,25" font="Regular; 18" halign="right" backgroundColor="layer-a-background" transparent="1"/>
-        </screen>
+	<screen name="NetworkPassword" position="0, 0" flags="wfNoBorder" title="Password" transparent="0" backgroundColor="transparent" size="1280, 720">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+	 	<panel name="PANEL_WINDOW_LARGE"/>
+		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
+		<widget name="config" position="480,80" size="730,363" itemHeight="30" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="HelpWindow" position="560,505" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
+		<widget source="introduction" render="Label" position="480,450" size="730,25" font="Regular; 18" halign="right" backgroundColor="layer-a-background" transparent="1"/>
+	</screen>
 	<screen name="NetworkMacSetup" position="0, 0" title="MAC-adress settings" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
@@ -2601,7 +2606,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="lab1" position="483,165" size="180,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3"/>
 		<widget name="labactive" position="693,166" size="200,30" font="Regular; 24" valign="center" transparent="0" zPosition="3"/>
@@ -2613,7 +2618,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="lab1" position="500,200" size="180,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3"/>
 		<widget name="labactive" position="750,200" size="200,30" font="Regular; 24" valign="center" transparent="0" zPosition="3"/>
@@ -2623,11 +2628,22 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="lab3" position="500,450" size="715,126" font="Regular; 24" valign="top" transparent="0" halign="left" zPosition="3"/>
 		<widget name="lab4" position="500,400" size="360,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3"/>
 	</screen>
+	<screen name="InetdRecovery" position="0,0" size="1280,720" title="Inetd Recovery" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
+		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
+		<widget name="config" position="470,90" size="720,453" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1" valign="top"/>
+		<eLabel position="450,70" zPosition="-1" size="760,585" backgroundColor="layer-a-background"/>
+		<panel name="PANEL_BUTTONBAR_RB_X"/>
+		<widget name="key_red" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+		<widget name="key_blue" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+	</screen>
 	<screen name="NetworkLog" title="Network Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_OK_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="infotext" position="483,115" size="700,550" font="SetrixHD; 18" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="0"/>
 	</screen>
@@ -2669,7 +2685,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget source="list" render="Listbox" position="471,122" size="747,531" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
@@ -2687,7 +2703,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="config" position="483,93" size="729,548" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3"/>
 	</screen>
