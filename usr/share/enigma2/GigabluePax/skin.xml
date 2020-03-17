@@ -673,6 +673,17 @@
 			</convert>
 		</widget>
 	</screen>
+	<screen name="LED_GigaSetup" position="0,0" size="1280,720" title="LED_GigaSetup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<ePixmap pixmap="GigabluePax/construct/menu/system/frontpanel.png" position="237,289" size="200,200" alphatest="blend"/>
+		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
+		<widget name="config" position="470,90" size="720,453" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1" valign="top"/>
+		<eLabel position="450,70" zPosition="-1" size="760,585" backgroundColor="layer-a-background"/>
+		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
+		<widget name="key_red" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+		<widget name="key_green" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+	</screen>
 	<screen name="menu_recording_menu" position="0,0" size="1280,720" title="Recording menu" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/recording.png" position="237,289" size="200,200" alphatest="blend"/>
@@ -762,6 +773,10 @@
 			<convert type="MenuEntryCompare">ipbox_client_Start</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+	</screen>
+	<screen name="menu_harddisk_menu" position="0,0" size="1280,721" title="Scan menu" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_MENU"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/devices.png" position="237,289" size="200,200" alphatest="blend"/>
 	</screen>
 	<screen name="OMMetrixWeatherSetup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
@@ -1728,15 +1743,61 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/devices.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/devices.png" position="237,289" size="200,200" alphatest="blend"/>
 		<eLabel text="Mounts" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="menu" scrollbarMode="showOnDemand" position="483,90" size="725,560" transparent="1"/>
+	</screen>
+	<screen name="HarddiskSelection" title="Select HDD" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_WINDOW_LARGE"/>
+		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/devices.png" position="237,289" size="200,200" alphatest="blend"/>
+		<widget name="hddlist" scrollbarMode="showOnDemand" position="483,90" size="725,560" transparent="1"/>
+		<widget name="key_red" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+		<widget name="key_green" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+	</screen>
+	<screen name="HarddiskSetup" title="Harddisk" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_WINDOW_LARGE"/>
+		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/devices.png" position="237,289" size="200,200" alphatest="blend"/>
+		<widget name="model" position="483,90" size="725,560" font="SetrixHD; 22" transparent="1"/>
+		<widget name="capacity" position="483,120" size="725,560" font="SetrixHD; 22" transparent="1"/>
+		<widget name="bus" position="483,150" size="725,560" font="SetrixHD; 22" transparent="1"/>
+		<widget name="key_red" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+		<widget name="key_green" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+	</screen>
+	<screen name="HddInfo" title="Hard Drive Info" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_WINDOW_LARGE"/>
+		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/devices.png" position="237,289" size="200,200" alphatest="blend"/>
+		<widget name="model" position="483,90" size="520,25" font="SetrixHD; 22"/>
+		<widget name="serial" position="483,120" size="520,25" font="SetrixHD; 22"/>
+		<widget name="firmware" position="483,150" size="520,25" font="SetrixHD; 22"/>
+		<widget name="cylinders" position="483,180" size="520,25" font="SetrixHD; 22"/>
+		<widget name="heads" position="483,210" size="520,25" font="SetrixHD; 22"/>
+		<widget name="sectors" position="483,240" size="520,25" font="SetrixHD; 22"/>
+		<widget name="readDisk" position="483,270" size="520,25" font="SetrixHD; 22"/>
+		<widget name="readCache" position="483,300" size="520,25" font="SetrixHD; 22"/>
+		<widget name="temp" position="483,330" size="520,25" font="SetrixHD; 22"/>
+		<widget name="config" position="483,360" scrollbarMode="showOnDemand" size="728,30"/>
+		<widget name="key_red" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+		<widget name="key_green" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
+	</screen>
+	<screen name="setup_harddisk" title="hard disk setup" position="0,0" size="1280,721" title="Scan menu" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_WINDOW_LARGE"/>
+		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/devices.png" position="237,289" size="200,200" alphatest="blend"/>
+		<widget name="config" position="483,90" scrollbarMode="showOnDemand" size="728,30"/>
+		<widget name="description" position="482,570" size="728,82" font="SetrixHD; 22" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
 	<screen name="HddPartitions" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/devices.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/devices.png" position="237,289" size="200,200" alphatest="blend"/>
 		<eLabel text="Partitions" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="label_disk" position="483,85" font="SetrixHD; 28" halign="center" size="725,40" valign="center" transparent="1"/>
 		<widget source="menu" render="Listbox" position="483,140" size="725,490" scrollbarMode="showOnDemand" transparent="1">
@@ -1756,7 +1817,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/devices.png" position="137,289" size="200,200" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/devices.png" position="237,289" size="200,200" alphatest="blend"/>
 		<eLabel text="Device List" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget source="menu" render="Listbox" position="483,85" size="725,560" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
