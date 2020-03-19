@@ -1296,12 +1296,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name="PANEL_WINDOW_FULL"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
 		<panel name="TITLE_UC"/>
-  	<widget name="config" position="65,300" size="595,210" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black" zPosition="1"/>
-  	<widget name="oscamsmartcardhelperimage" position="660,220" size="330,300" zPosition="3" backgroundColor="black" transparent="1"/>
-  	<widget name="HELPTEXT" position="670,518" size="544,130" zPosition="1" font="SetrixHD; 20" halign="left" backgroundColor="black" transparent="1"/>
-  	<widget name="HEADER" position="65,70" size="590,200" zPosition="1" font="SetrixHD; 20" halign="left" backgroundColor="black"/>
-  	<widget name="INFOTXT" position="65,518" size="590,110" zPosition="1" font="SetrixHD; 20" halign="left" backgroundColor="black" transparent="1"/>
-  	<!--eLabel text="OscamSmartcard 2.4 by arn354 and Undertaker" position="860,70" size="360,20" zPosition="1" font="SetrixHD; 15" halign="right" backgroundColor="black" transparent="1"/-->
+		<widget name="config" position="65,300" size="595,210" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black" zPosition="1"/>
+		<widget name="oscamsmartcardhelperimage" position="660,220" size="330,300" zPosition="3" backgroundColor="black" transparent="1"/>
+		<widget name="HELPTEXT" position="670,518" size="544,130" zPosition="1" font="SetrixHD; 20" halign="left" backgroundColor="black" transparent="1"/>
+		<widget name="HEADER" position="65,70" size="590,200" zPosition="1" font="SetrixHD; 20" halign="left" backgroundColor="black"/>
+		<widget name="INFOTXT" position="65,518" size="590,110" zPosition="1" font="SetrixHD; 20" halign="left" backgroundColor="black" transparent="1"/>
+		<!--eLabel text="OscamSmartcard 2.4 by arn354 and Undertaker" position="860,70" size="360,20" zPosition="1" font="SetrixHD; 15" halign="right" backgroundColor="black" transparent="1"/-->
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/OscamSmartcard/images/oscamsmartcard.png" position="950,90" size="275,250" alphatest="blend" zPosition="2"/>
 		<eLabel text="Cancel" position="398,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
 		<eLabel text="Start" position="605,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
