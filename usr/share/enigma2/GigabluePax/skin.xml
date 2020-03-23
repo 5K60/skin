@@ -1293,7 +1293,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	</screen>
 	<screen name="OscamSmartcard" position="0, 0" flags="wfNoBorder" title="OscamSmartcard" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_WINDOW_FULL"/>
+		<panel name="PANEL_MENU_BAND_3"/>
+		<eLabel position="49,65" zPosition="-2" size="1182,600" backgroundColor="#00000000"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
 		<panel name="TITLE_UC"/>
 		<widget name="config" position="65,300" size="595,210" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black" zPosition="1"/>
@@ -1307,6 +1308,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<eLabel text="Start" position="605,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
 		<eLabel text="Info" position="815,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
 		<eLabel text="clean up" position="1018,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+	</screen>
+	<screen name="MultiBootSelector" position="0,0" size="1280,720" title="MultiBootSelector" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_WINDOW_LARGE"/>
+		<panel name="TITLE_UC"/>
+		<!--widget name="config" position="482,125" size="725,485" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/-->
+		<widget name="config" position="483,85" size="725,560" font="SetrixHD; 30" itemHeight="60" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
+		<ePixmap pixmap="GigabluePax/construct/menu/main/power.png" position="237,289" size="200,200" alphatest="blend"/>
+		<panel name="PANEL_BUTTONBAR_SOURCE_RG_OK_X"/>
 	</screen>
 	<screen name="SystemNetworkInfo" position="0,0" size="1280,720" title="SystemNetworkInfo" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
