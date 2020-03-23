@@ -330,6 +330,9 @@
 		<widget source="key_red" render="Label" position="475,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="key_green" render="Label" position="685,685" size="210,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="key_blue" render="Label" position="918,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key_red" position="587,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key_green" position="793,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key_blue" position="998,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
 		<ePixmap name="" position="1103,680" size="94,40" pixmap="GigabluePax/buttons/buttonbar_menu.png" alphatest="blend" zPosition="1"/>
 		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/buttonbar_exit.png" alphatest="blend" zPosition="1"/>
 		<ePixmap name="" position="452,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
@@ -530,6 +533,9 @@
 	</screen>
 	<screen name="BAR_ICON_SYS_AUDIO">
 		<ePixmap pixmap="GigabluePax/construct/menu/system/audio.png" position="237,289" size="200,200" alphatest="blend"/>
+	</screen>
+	<screen name="BAR_ICON_SYS_EPG">
+		<ePixmap pixmap="GigabluePax/construct/menu/system/epg.png" position="237,289" size="200,200" alphatest="blend"/>
 	</screen>
 	<!-- SCREENS -->
 	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
@@ -813,7 +819,7 @@
 	</screen>
 	<screen name="menu_epg_menu" position="0,0" size="1280,720" title="EPG menu" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_MENU"/>
-		<ePixmap pixmap="GigabluePax/construct/menu/system/epg.png" position="237,289" size="200,200" alphatest="blend"/>
+		<panel name="BAR_ICON_SYS_EPG"/>
 	</screen>
 	<screen name="menu_network_menu" position="0,0" size="1280,720" title="Network menu" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_MENU"/>
@@ -1435,6 +1441,29 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 				"itemHeight": 24}
 			</convert>
 		</widget>
+	</screen>
+	<screen name="EPGRefreshConfiguration" position="0,0" size="1280,720" title="EPGRefresh Configuration" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="TITLE_UC"/>
+		<panel name="PANEL_WINDOW_LARGE"/>
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_INFO_X"/>
+		<panel name="BAR_ICON_SYS_EPG"/>
+		<widget name="config" position="488,105" size="720,560" font="Regular; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="description" render="Label" position="488,540" size="720,135" font="Regular; 18" backgroundColor="layer-a-background" transparent="1" zPosition="2" foregroundColor="unfcc000"/>
+	</screen>
+	<screen name="EPGRefreshServiceEditor" position="0,0" size="1280,720" title="EPGRefresh Configuration" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="TITLE_UC"/>
+		<panel name="PANEL_WINDOW_MEDIUM"/>
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
+		<panel name="BAR_ICON_SYS_EPG"/>
+		<widget name="config" position="617,105" size="530,560" font="Regular; 20" backgroundColor="layer-a-background" transparent="1"/>
+	</screen>
+	<screen name="EPGRefreshConfigurationFunctionContextMenu" position="0,0" size="1280,720" title="EPGRefresh Configuration" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_MENU"/>
+		<panel name="BAR_ICON_SYS_EPG"/>
+		<panel name="TITLE_UC"/>
+		<panel name="PANEL_BUTTONBAR_OK_X"/>
 	</screen>
 	<screen name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
