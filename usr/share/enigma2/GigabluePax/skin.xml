@@ -1848,7 +1848,33 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<eLabel position="607,65" zPosition="-1" size="550,605" backgroundColor="layer-a-background"/>
 		<eLabel text="Skin" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget name="SkinList" position="616,73" size="530,500" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
-		<widget name="Preview" position="183,279" size="280,210" alphatest="blend"/>
+		<widget name="Preview" position="225,300" size="280,210" alphatest="blend"/>
+	</screen>
+	<screen name="LCDSkinSelectorOLD" position="0,0" size="1280,720" title="Skin Selector" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_BUTTONBAR_OK_X"/>
+		<panel name="PANEL_MENU_BAND_2"/>
+		<eLabel position="607,65" zPosition="-1" size="550,605" backgroundColor="layer-a-background"/>
+		<eLabel text="Skin" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget name="SkinList" position="616,73" size="530,500" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="Preview" position="225,300" size="280,210" alphatest="blend"/>
+		<!-- -Not shown but Screen requires it -->
+		<widget name="lab1" position="100,106" size="0,0" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="top" transparent="1"/>
+		<widget name="lab2" position="100,180" size="0,0" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="center" transparent="1"/>
+		<widget name="lab3" position="100,180" size="0,0" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="center" transparent="1"/>
+	</screen>
+	<screen name="LCDClockSelector" position="0,0" size="1280,720" title="Skin Selector" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_BUTTONBAR_OK_X"/>
+		<panel name="PANEL_MENU_BAND_2"/>
+		<eLabel position="607,65" zPosition="-1" size="550,605" backgroundColor="layer-a-background"/>
+		<eLabel text="Skin" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget name="ClockList" position="616,73" size="530,500" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="Preview" position="225,300" size="280,210" alphatest="blend"/>
+		<!-- -Not shown but Screen requires it -->
+		<widget name="lab1" position="100,106" size="0,0" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="top" transparent="1"/>
+		<widget name="lab2" position="100,180" size="0,0" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="center" transparent="1"/>
+		<widget name="lab3" position="100,180" size="0,0" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="center" transparent="1"/>
 	</screen>
 	<screen name="ScanSimple" position="0,0" size="1280,720" title="Service scan" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
