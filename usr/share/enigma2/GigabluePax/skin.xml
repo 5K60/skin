@@ -651,7 +651,7 @@
 	</screen>
 	<!-- TITLE PANELS-->
 	<screen name="TITLE_UC">
-		<widget source="Title" render="Label" position="369,0" size="600,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
 	</screen>
 	<screen name="TITLE_LC">
 		<widget source="title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
@@ -1727,6 +1727,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name="PANEL_WINDOW_MEDIUM"/>
 		<widget name="filelist" position="615,87" zPosition="1" size="534,571" font="SetrixHD; 30" itemHeight="60" backgroundColor="layer-a-background" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/software_management.png" zPosition="10" position="237,289" size="200,200" alphatest="blend"/>
+	</screen>
+	<screen name="Opkg" position="0, 0" flags="wfNoBorder" title="Installing Software..." transparent="0" backgroundColor="transparent" size="1280, 720">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_WINDOW_LARGE"/>
+		<panel name="BAR_ICON_SYS_SOFT"/>
+		<panel name="TITLE_UC"/>
+		<widget name="slider" backgroundColor="layer-a-progress" pixmap="GigabluePax/colors/00007eff.png" position="483,175" size="730,5" borderWidth="0" transparent="1" zPosition="30"/>
+		<widget name="package" position="483,190" size="730,40" font="Regular;20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="status" position="483,90" size="730,80" font="SetrixHD;26" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="activityslider" position="483,240" size="730,5" borderWidth="0" pixmap="GigabluePax/colors/00007eff.png" transparent="1" zPosition="30"/>
+		<eLabel backgroundColor="layer-a-accent1" position="483,177" size="730,1"/>
+		<eLabel backgroundColor="layer-a-accent1" position="483,242" size="730,1"/>
+		<panel name="PANEL_KEY_EXIT"/>
 	</screen>
 	<screen name="OpkgInstaller" position="0,0" size="1280,720" title="Install extensions" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
