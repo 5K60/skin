@@ -237,6 +237,14 @@
 		<widget objectTypes="key_green,Label,Button" name="key_green" position="810,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
 		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="810,685" size="180,26" zPosition="2" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
+	<screen name="PANEL_KEY_GREEN_2_2">
+		<ePixmap objectTypes="key_green,Button,Label" pixmap="GigabluePax/buttons/key_green.png" position="705,680" size="30,40" alphatest="blend"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="GigabluePax/buttons/key_green.png" position="705,680" size="30,40" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget objectTypes="key_green,Label,Button" name="key_green" position="730,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="730,685" size="270,26" zPosition="2" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+	</screen>
 	<screen name="PANEL_KEY_GREEN_3_1">
 		<ePixmap objectTypes="key_green,Button,Label" pixmap="GigabluePax/buttons/key_green.png" position="576,680" size="30,40" alphatest="blend"/>
 		<widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="GigabluePax/buttons/key_green.png" position="576,680" size="30,40" alphatest="blend">
@@ -552,6 +560,14 @@
 		<panel name="PANEL_BUTTONBAR_RGYB_2"/>
 		<panel name="PANEL_KEY_MENU_2"/>
 		<panel name="PANEL_KEY_EXIT"/>
+	</screen>
+	<screen name="PANEL_BUTTONBAR_RGY_OK_X">
+		<panel name="PANEL_KEY_RED_3_2"/>
+		<panel name="PANEL_KEY_GREEN_2_2"/>
+		<panel name="PANEL_KEY_YELLOW_1_2"/>
+		<panel name="PANEL_KEY_OK_2"/>
+		<panel name="PANEL_KEY_EXIT"/>
+		<ePixmap name="" position="496,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
 	</screen>
 	<screen name="PANEL_BUTTONBAR_RG_INFO_X">
 		<panel name="PANEL_KEY_RED_2_2_WIDE"/>
@@ -1469,6 +1485,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="config" position="483,85" size="725,560" font="SetrixHD; 30" itemHeight="60" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/main/power.png" position="237,289" size="200,200" alphatest="blend"/>
 		<panel name="PANEL_BUTTONBAR_RG_OK_X"/>
+	</screen>
+	<screen name="MultiBootWizard" position="0,0" size="1280,720" title="MultiBoot Image Manager" flags="wfNoBorder" backgroundColor="transparent">
+			<panel name="PANEL_GIGABLUE_TOP"/>f
+			<panel name="PANEL_WINDOW_MEDIUM"/>
+			<panel name="TITLE_UC"/>
+			<widget name="config" position="617,105" size="530,560" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+			<panel name="BAR_ICON_SYS_SOFT"/>
+			<panel name="PANEL_BUTTONBAR_RGY_OK_X"/>
+			<widget source="description" render="Label" position="622,540" size="525,135" font="Regular; 18" backgroundColor="layer-a-background" transparent="1" zPosition="2" foregroundColor="unfcc000"/>
+      <widget source="options" render="Label" position="622,590" size="525,135" font="Regular; 18" backgroundColor="layer-a-background" transparent="1" zPosition="2" foregroundColor="unfcc000"/>
 	</screen>
 	<screen name="SystemNetworkInfo" position="0,0" size="1280,720" title="SystemNetworkInfo" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
