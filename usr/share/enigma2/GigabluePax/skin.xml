@@ -1728,7 +1728,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="filelist" position="615,87" zPosition="1" size="534,571" font="SetrixHD; 30" itemHeight="60" backgroundColor="layer-a-background" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/software_management.png" zPosition="10" position="237,289" size="200,200" alphatest="blend"/>
 	</screen>
-	<screen name="OpkgInstaller" position="0,0" size="1280,720" title="Select update source to edit" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="OpkgInstaller" position="0,0" size="1280,720" title="Install extensions" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_BUTTONBAR_RGB_X"/>
 		<panel name="TITLE_UC"/>
